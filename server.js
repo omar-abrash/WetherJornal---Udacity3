@@ -1,6 +1,6 @@
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
-
+const path = require('path')
 // Require Express to run server and routes
 const express = require('express');
 // Start up an instance of app
@@ -26,6 +26,12 @@ function listining() {
     console.log(`server is conectting with localhost:${port}`);
 }
 // :::::::::::::::::::::::::::::::::::::
+// console.log(__dirname)
+// // GET HTTP
+// app.get("/", (req, res) => {
+//     res.sendFile(path.join(__dirname,'./website/index.html'));
+//     res.end();
+// });
 
 // GET HTTP
 app.get("/all", (req, res) => {
